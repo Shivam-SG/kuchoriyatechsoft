@@ -14,7 +14,7 @@ const Footer = () => {
         <div>
           <div className="flex items-center mb-4">
             <img
-              src="/kuchoriya.png" // Replace with your logo path
+              src="/kuchoriya.png"
               alt="Kuchoriya Logo"
               className="h-10"
             />

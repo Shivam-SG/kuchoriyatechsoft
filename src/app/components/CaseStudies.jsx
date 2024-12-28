@@ -26,10 +26,9 @@ const CaseStudies = () => {
     <section
       className="relative bg-cover bg-center text-white py-20"
       style={{
-        backgroundImage: "url('/bg-1.jpeg')", // Replace with your main section image URL
+        backgroundImage: "url('/bg-1.jpeg')", 
       }}
     >
-      {/* Overlay */}
       <div className="absolute inset-0 bg-black/75 backdrop-blur-md"></div>
 
       <div className="relative mx-4 sm:mx-8 md:mx-20 h-full flex flex-col md:flex-row">
@@ -57,7 +56,7 @@ const CaseStudies = () => {
             <div
               className="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-110"
               style={{
-                backgroundImage: `url('${caseStudy.imageUrl}')`, // Dynamically set the image URL
+                backgroundImage: `url('${caseStudy.imageUrl}')`,
               }}
             ></div>
 

@@ -6,7 +6,7 @@ const BusinessSuccess = () => {
     <section
       className="relative bg-cover bg-center text-white py-20"
       style={{
-        backgroundImage: "url('/bg-1.jpeg')", // Replace with your image URL
+        backgroundImage: "url('/bg-1.jpeg')",
       }}
     >
       <div className="absolute inset-0 bg-black/75 backdrop-blur-md"></div>
@@ -16,7 +16,7 @@ const BusinessSuccess = () => {
           <div className="grid grid-cols-2 gap-4">
             <div className="border-2 border-orange-500 rounded-lg p-2 overflow-hidden">
               <Image
-                src="/business-1.jpg" // Replace with your image path
+                src="/business-1.jpg"
                 alt="Team working"
                 width={500}
                 height={500}
@@ -25,7 +25,7 @@ const BusinessSuccess = () => {
             </div>
             <div className="border-2 border-orange-500 rounded-lg p-2 overflow-hidden">
               <Image
-                src="/business-2.jpg" // Replace with your image path
+                src="/business-2.jpg" 
                 alt="Team collaborating"
                 width={500}
                 height={500}

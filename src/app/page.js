@@ -11,16 +11,12 @@ import CaseStudies from "./components/CaseStudies";
 export default function Home() {
   return (
     <div className="bg-white text-black">
-      {/* Navbar */}
       <Navbar />
 
-      {/* Hero Section */}
       <Hero/>
-
-      {/* Description */}
+      
       <Description/>
 
-      {/* BusinessSuccess */}
       <BusinessSuccess/>
 
       <ServicesSection/>
@@ -29,7 +25,6 @@ export default function Home() {
 
       <Blogs/>
 
-      {/* Footer */}
       <Footer />
     </div>
   );

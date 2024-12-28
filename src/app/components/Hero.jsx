@@ -7,7 +7,7 @@ const Hero = () => {
     <section
       className="relative bg-cover bg-center h-screen text-white"
       style={{
-        backgroundImage: "url('/bg-1.jpeg')", // Replace with your image URL
+        backgroundImage: "url('/bg-1.jpeg')",
       }}
     >
       <div className="absolute inset-0 bg-black/75 backdrop-blur-md"></div>

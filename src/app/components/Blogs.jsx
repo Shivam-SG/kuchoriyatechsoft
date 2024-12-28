@@ -3,33 +3,31 @@ import Link from "next/link";
 import React from "react";
 
 const Blogs = () => {
-  // Example blog data array
   const blogs = [
     {
       id: 1,
       title: "Courier Delivery App Development: Features, Costs, and Key Insights for 2024",
       description:
         "In today's fast-paced world, courier and delivery services are no longer just an option but an essential service....",
-      image: "/blog-1.png", // Replace with your image path
-      link: "#", // Replace with your actual blog link
+      image: "/blog-1.png", 
+      link: "#",
     },
     {
       id: 2,
       title: "Mobile App Development: Trends to Watch in 2024",
       description:
         "The mobile app development landscape is constantly evolving, and 2024 promises to be a year full of exciting innovations....",
-      image: "/blog-2.png", // Replace with your image path
-      link: "#", // Replace with your actual blog link
+      image: "/blog-2.png",
+      link: "#",
     },
     {
       id: 3,
       title: "E-commerce Business Growth: Key Strategies for Success",
       description:
         "With the rise of online shopping, e-commerce businesses need to adopt new strategies to stay ahead in the market....",
-      image: "/blog-3.png", // Replace with your image path
-      link: "#", // Replace with your actual blog link
+      image: "/blog-3.png",
+      link: "#",
     },
-    // Add more blog objects as needed
   ];
 
   return (
@@ -57,7 +55,7 @@ const Blogs = () => {
       >
         <div className="relative">
           <Image
-            src={blog.image} // Dynamic image path
+            src={blog.image} 
             alt="Blog image"
             width={500}
             height={300}
