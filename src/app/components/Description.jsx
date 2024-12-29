@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 
 const Description = () => {
@@ -15,8 +16,8 @@ const Description = () => {
             Brandable Organizations”
           </blockquote>
           <p className="mt-3 md:mt-4 text-sm md:text-base text-gray-600">
-            Appropriately enhance principle-centered innovation rather than
-            high standards in platforms. Credibly orchestrate functional markets
+            Appropriately enhance principle-centered innovation rather than high
+            standards in platforms. Credibly orchestrate functional markets
             through multidisciplinary services. Uniquely strategize transparent
             technology and user-friendly ideas markets.
           </p>
@@ -35,14 +36,16 @@ const Description = () => {
       <div className="flex items-center justify-center relative lg:w-1/2">
         <div className="hidden md:block absolute bg-orange-100 rounded-full w-40 h-40 md:w-60 md:h-60 -top-8 md:-top-12 right-16 md:right-1"></div>
         <div className="hidden md:block absolute bg-orange-100 rounded-full w-40 h-40 md:w-60 md:h-60 -top-8 md:top-[20rem] right-16 md:right-[28rem]"></div>
-        <div className="w-72 h-72 md:w-96 md:h-[35rem] bg-black/50 rounded-full overflow-hidden border-4 border-[#cd4a01]">
-          <img
+        <div className="relative w-72 h-72 md:w-96 md:h-[35rem] bg-black/50 rounded-full overflow-hidden border-4 border-[#cd4a01]">
+          <Image
             src="/ceo.jpeg"
             alt="Person 1"
-            className="w-full h-full object-cover"
+            fill
+            style={{ objectFit: "cover" }}
+            quality={75}
+            priority
           />
         </div>
-        
       </div>
     </div>
   );

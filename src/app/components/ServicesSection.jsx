@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 
 const ServicesSection = () => {
@@ -56,7 +57,13 @@ const ServicesSection = () => {
               className="bg-white shadow-md rounded-lg p-6 text-center transform transition duration-300 hover:-translate-y-2 hover:shadow-lg"
             >
               <div className="flex justify-center items-center w-16 h-16 mx-auto bg-gray-100 rounded-full mb-4 transition-transform duration-300 hover:scale-110">
-                <img src={service.icon} alt={service.title} className="h-8" />
+                <Image
+                  src={service.icon}
+                  alt={service.title}
+                  width={70}
+                  height={70}
+                  className="py-3 px-3"
+                />
               </div>
               <h3 className="text-2xl font-semibold text-gray-800">
                 {service.title}

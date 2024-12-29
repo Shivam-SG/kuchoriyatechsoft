@@ -1,15 +1,19 @@
 import React from "react";
 import { FaArrowTrendUp } from "react-icons/fa6";
 import { FaPhoneAlt } from "react-icons/fa";
+import Image from "next/image";
 
 const Hero = () => {
   return (
-    <section
-      className="relative bg-cover bg-center h-screen text-white"
-      style={{
-        backgroundImage: "url('/bg-1.jpeg')",
-      }}
-    >
+    <section className="relative bg-cover bg-center h-screen text-white">
+      <Image
+        src="/bg-1.jpeg"
+        alt="Background"
+        fill
+        style={{ objectFit: "cover" }}
+        quality={75}
+        priority
+      />
       <div className="absolute inset-0 bg-black/75 backdrop-blur-md"></div>
       <div className="relative mx-4 sm:mx-8 md:mx-20 h-full flex flex-col md:flex-row items-center justify-center">
         <div className="md:w-1/2 ">
@@ -51,26 +55,35 @@ const Hero = () => {
         <div className="flex justify-center items-center w-full md:w-1/2 mt-9 hidden lg:block">
           <div className="flex items-center justify-center space-x-8 flex-wrap md:flex-nowrap">
             <div className="relative w-32 h-64 sm:w-48 sm:h-[26rem] bg-black/50 rounded-full overflow-hidden border-4 border-[#cd4a01] flex items-center justify-center mb-6 sm:mb-0">
-              <img
-                src="consult-1.jpeg"
+              <Image
+                src="/consult-1.jpeg"
                 alt="Person 1"
-                className="w-full h-full object-cover grayscale"
+                fill
+                style={{ objectFit: "cover" }}
+                quality={75}
+                priority
               />
             </div>
 
             <div className="relative w-48 h-80 sm:w-64 sm:h-[36rem] bg-black/50 rounded-full overflow-hidden border-4 border-[#cd4a01] flex items-center justify-center mb-6 sm:mb-0">
-              <img
-                src="consult-2.jpeg"
-                alt="Person 2"
-                className="w-full h-full object-cover grayscale"
+              <Image
+                src="/consult-2.jpeg"
+                alt="Person 1"
+                fill
+                style={{ objectFit: "cover" }}
+                quality={75}
+                priority
               />
             </div>
 
             <div className="relative w-32 h-64 sm:w-48 sm:h-[26rem] bg-black/50 rounded-full overflow-hidden border-4 border-[#cd4a01] flex items-center justify-center">
-              <img
-                src="consult-3.jpeg"
-                alt="Person 3"
-                className="w-full h-full object-cover grayscale"
+              <Image
+                src="/consult-3.jpeg"
+                alt="Person 1"
+                fill
+                style={{ objectFit: "cover" }}
+                quality={75}
+                priority
               />
             </div>
           </div>

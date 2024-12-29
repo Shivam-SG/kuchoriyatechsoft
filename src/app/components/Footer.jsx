@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 import {
   FaInstagram,
@@ -13,10 +14,12 @@ const Footer = () => {
         {/* Company Info */}
         <div>
           <div className="flex items-center mb-4">
-            <img
-              src="/kuchoriya.png"
-              alt="Kuchoriya Logo"
-              className="h-10"
+            <Image
+              src={"/kuchoriya.png"}
+              alt="Logo"
+              width={70}
+              height={70}
+              className=" ml-5 md:ml-0 py-2 px-2"
             />
             <h2 className="text-orange-500 font-bold text-xl ml-2">
               KUCHORIYA
@@ -90,37 +93,37 @@ const Footer = () => {
       </div>
 
       <div className="flex flex-col md:flex-row items-center justify-between mt-6">
-      <div className="">
-        <div className="text-yellow-400 flex space-x-1 mb-4 md:mb-0">
-          {[...Array(5)].map((_, i) => (
-            <span key={i}>⭐</span>
-          ))}
+        <div className="">
+          <div className="text-yellow-400 flex space-x-1 mb-4 md:mb-0">
+            {[...Array(5)].map((_, i) => (
+              <span key={i}>⭐</span>
+            ))}
+          </div>
+          <div className="text-yellow-400 flex space-x-1 mb-4 md:mb-0">5/5</div>
+          <span className="text-sm">Rated 5/5 based on 300+ clients</span>
         </div>
-        <div className="text-yellow-400 flex space-x-1 mb-4 md:mb-0">5/5</div>
-        <span className="text-sm">Rated 5/5 based on 300+ clients</span>
-      </div>
 
-      <div className="flex flex-col md:flex-row items-center justify-between mt-6">
-        <div className="mb-4 md:mb-0 w-full md:w-1/2">
-          <p className="font-bold">
-            Sign up for the{" "}
-            <span className="text-orange-500">Newsletters</span>
-          </p>
-          <form className="mt-2 flex flex-col md:flex-row">
-            <input
-              type="email"
-              placeholder="Enter your email..."
-              className="p-2 rounded-l border border-gray-700 w-full md:w-auto"
-            />
-            <button
-              type="submit"
-              className="bg-orange-500 text-white px-4 py-2 rounded-r mt-2 md:mt-0"
-            >
-              →
-            </button>
-          </form>
+        <div className="flex flex-col md:flex-row items-center justify-between mt-6">
+          <div className="mb-4 md:mb-0 w-full md:w-1/2">
+            <p className="font-bold">
+              Sign up for the{" "}
+              <span className="text-orange-500">Newsletters</span>
+            </p>
+            <form className="mt-2 flex flex-col md:flex-row">
+              <input
+                type="email"
+                placeholder="Enter your email..."
+                className="p-2 rounded-l border border-gray-700 w-full md:w-auto"
+              />
+              <button
+                type="submit"
+                className="bg-orange-500 text-white px-4 py-2 rounded-r mt-2 md:mt-0"
+              >
+                →
+              </button>
+            </form>
+          </div>
         </div>
-      </div>
       </div>
 
       <div className="mt-10 border-t border-gray-800 text-center pt-8">
