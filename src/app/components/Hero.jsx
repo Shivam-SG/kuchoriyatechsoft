@@ -27,7 +27,7 @@ const Hero = () => {
               tailored to drive success and efficiency.
             </p>
 
-            <div className="relative my-10 mr-16">
+            <div className="relative my-10 mx-4 sm:mx-8 lg:mx-16">
               <div className="w-full h-1 bg-transparent overflow-hidden">
                 <div className="top-0 left-0 h-full bg-[#cd4a01] animate-loader"></div>
               </div>
