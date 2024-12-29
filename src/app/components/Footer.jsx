@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 import {
   FaInstagram,
@@ -136,18 +137,34 @@ const Footer = () => {
           </div>
 
           <div className="flex justify-center space-x-4 text-xl mt-4 md:mt-0">
-            <a href="#" className="text-gray-500 hover:text-white">
+            <Link
+              href="#"
+              className="text-gray-500 hover:text-white"
+              aria-label="Visit our Instagram"
+            >
               <FaInstagram />
-            </a>
-            <a href="#" className="text-gray-500 hover:text-white">
+            </Link>
+            <Link
+              href="#"
+              className="text-gray-500 hover:text-white"
+              aria-label="Visit our YouTube"
+            >
               <FaYoutube />
-            </a>
-            <a href="#" className="text-gray-500 hover:text-white">
+            </Link>
+            <Link
+              href="#"
+              className="text-gray-500 hover:text-white"
+              aria-label="Visit our LinkedIn"
+            >
               <FaLinkedin />
-            </a>
-            <a href="#" className="text-gray-500 hover:text-white">
+            </Link>
+            <Link
+              href="#"
+              className="text-gray-500 hover:text-white"
+              aria-label="Visit our Twitter"
+            >
               <FaXTwitter />
-            </a>
+            </Link>
           </div>
         </div>
       </div>

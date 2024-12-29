@@ -90,10 +90,10 @@ const Navbar = () => {
         </nav>
 
         <div className="space-x-4 hidden md:block">
-          <button className="bg-[#cd4a01] hover:bg-[#df753b] text-white px-2 py-2 rounded-full transition-transform duration-300 transform hover:scale-110 hover:shadow-xl">
+          <button aria-label="Call us" className="bg-[#cd4a01] hover:bg-[#df753b] text-white px-2 py-2 rounded-full transition-transform duration-300 transform hover:scale-110 hover:shadow-xl">
             <FaPhoneAlt />
           </button>
-          <button className="bg-[#cd4a01] hover:bg-[#df753b] text-white px-6 py-2 rounded-2xl transition-transform duration-300 transform hover:scale-110 hover:shadow-xl">
+          <button aria-label="Request a quote" className="bg-[#cd4a01] hover:bg-[#df753b] text-white px-6 py-2 rounded-2xl transition-transform duration-300 transform hover:scale-110 hover:shadow-xl">
             Request a Quote
           </button>
         </div>
@@ -102,6 +102,7 @@ const Navbar = () => {
           <button
             onClick={() => setMobileMenuOpen(!isMobileMenuOpen)}
             className="text-white"
+            aria-label="Open mobile menu"
           >
             <RiMenu3Fill className="text-[30px] text-[#cd4a01] font-bold" />
           </button>
@@ -118,6 +119,7 @@ const Navbar = () => {
           <button
             onClick={() => setMobileMenuOpen(false)}
             className="text-white"
+            aria-label="Close mobile menu"
           >
             <AiOutlineClose className="text-[30px] text-white" />
           </button>
